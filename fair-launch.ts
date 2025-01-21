@@ -62,10 +62,11 @@ export class FailrLaunch {
         // const drawPrice = new BN(1e8);
         // const solRefundAmount = new BN(9e7);
         // const tokenClaimAmount = new BN(1000e6);
-        let account = await this.client.queryFairLaunchAccount();
+        // let account = await this.client.queryFairLaunchAccount();
         // let vault = this.client.findFairLaunchValultAccountPDA()
         // let token =  this.client.findTokenPDA()
-        console.log(account)
+        await this.client.fairLaunchEmergencyWithdraw(admin, new PublicKey('6pnk2j6J1KGtjF8nZBuZxviqWVvApwUZ49KAWXfjjaBu'), new BN(26e9))
+        // console.log(account)
         // if (!account) {
         //     const ts = await this.client.fairLaunchInitialize(admin, signer.publicKey, startTime, drawPrice, solRefundAmount, tokenClaimAmount);
         //     console.log("fairLaunchInitialize", ts);

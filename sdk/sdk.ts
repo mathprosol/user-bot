@@ -16,16 +16,17 @@ export class MathsolClient {
     public eventParser: EventParser;
     public endpoint: string;
 
-    public static programId: string = "25dqkLnmDMJYt2mMgg8cbJiYuApTRouskAqhNJneDX9Z";
     
-    public static pool_address:string = "wYVYLqYtCSekjpKnoDFYVH83nGGgKb7T2Ed5vw4z6Xz"
+    public static programId: string = "2qpL8gUX56N3FHtsibLiBAVXHqdySLbW8BkDmoEDz7t4";
+    
+    public static pool_address:string = "AWfKPuF7wpLP7WxshTBnKMSjYj3yhGqEieKXTUcHsuf6"
     public static pool_address_rate:BN = new BN(2)
-    public static manager_address:string = "9KZLV7qSfhawzLYpsQ7HExDGFHv7ghi9Tihj7L1ZRZZY"
+    public static manager_address:string = "CQtsvwrWCJwCoqWVZ9Z41aS5zCn8EqWRy4MkhCWr27AC"
     public static manager_address_rate:BN = new BN(3)
-    public static team_address:string = "Gz4bkHgrq5nDDoJyEHs8kGGY8YMda759acB49sxdbZAs"
+    public static team_address:string = "DMoqLhfwSAdh2qjY8x5eYHGmtRbLbCLz3MxE1mFPQ9wf"
     public static team_address_rate:BN = new BN(3)
-    public static nft_taxer:string = "5osXaaTVYujPYaj6XQHLvXM4VLpBwawRMX9GPrMUMfkX"
-    public static nft_price:BN = new BN(5e7) //0.05 SOL
+    public static nft_taxer:string = "2iPnE78Mv5P23qcfKWVa9fEbgLJdtvJdvnZghQ2TFgDB"
+    public static nft_price:BN = new BN(3e7) //0.03 SOL
 
     public static fromEndpoint(endpoint: string) {
         const program = new Program(
